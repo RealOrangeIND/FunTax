@@ -1,0 +1,59 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  }
+
+@media (min-width: 768px) {
+    .flex-md-equal>* {
+      -ms-flex: 1;
+      -webkit-box-flex: 1;
+      flex: 1;
+    }
+  }
+
+.overflow-hidden {
+    overflow: hidden;
+  }
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+@media (min-width: 40em) {
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+.marketing .col-lg-6 {
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+.marketing .col-lg-6 p {
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+.landmark {
+  display: none;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
