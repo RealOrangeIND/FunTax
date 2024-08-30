@@ -1,25 +1,46 @@
+let assessmentYear;
+let taxpayerCategory;
+let residentialStatus;
+let age;
 let income;
-let taxAmount;
+let totalDeductions;
 
-function testCalc() {
-  initialiseValues();
-  taxAmount = income + 100;
+let newTaxAmount;
+let oldTaxAmount
+
+function taxCalc() {
+  if (newTaxAmount <= 0) {
+    newTaxAmount = 0;
+  } else {
+    newTax();
+  }
+
+  if (oldTaxAmount <= 0) {  
+    oldTaxAmount = 0;
+  } else {
+    oldTax();
+  }
+}
+
+function newTax() {
+  newTaxAmount = income + 100
+}
+
+function oldTax() {
+  oldTaxAmount = income + 100
 }
 
 function update() {
-
-  testCalc();
-
-  document.getElementById("taxAmount").textContent = taxAmount;
-
+  taxCalc();
+  document.getElementById("newTaxAmount").textContent = newTaxAmount;
+  document.getElementById("oldTaxAmount").textContent = oldTaxAmount;
   document.getElementById("resultsContainer").style.display = "block";
-  console.log(income)
 }
 
 function sub() {
-
+  initialiseValues();
   if (
-    income == NaN
+    isNaN(income)
   ) {
     alert("Please fill in all required fields with valid values.");
     return;
@@ -29,5 +50,10 @@ function sub() {
 }
 
 function initialiseValues() {
+  assessmentYear = document.getElementById("assessmentYear").value;
+  taxpayerCategory = document.getElementById("taxpayerCategory").value;
+  residentialStatus = document.getElementById("residentialStatus").value;
+  age = document.getElementById("age").value;
   income = parseFloat(document.getElementById("income").value);
+  totalDeductions = parseFloat(document.getElementById("totalDeductions").value);
 }

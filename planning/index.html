@@ -42,9 +42,479 @@
     </nav>
   </header>
 
-  <main>
+  <main role="main">
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="display-4">PopTax Planning</h1>
+        <p class="lead text-muted">Navigating the world of taxes can seem overwhelming, but with the right knowledge and
+          strategies, you can manage your finances more effectively and potentially save money.</p>
+      </div>
+    </section>
 
+    <div class="container marketing">
+      <section class="featurette pb-1">
+        <p class="lead">Imagine tax planning as your personal treasure hunt for hidden savings. 🎯 </p>
+        <p class="lead">Instead of stumbling
+          through the jungle of tax forms and deductions, you’ve got a map that helps you uncover valuable treasures
+          along the way.</p>
+        <p class="lead">Here’s how you can make the most of your tax adventure:</p>
+      </section>
+      <hr>
 
+      <section class="featurette pt-2" id="map">
+        <h1 class="featurette-heading font-weight-bold text-center">The Treasure Map</h1>
+        <br>
+        <p class="lead">Think of your tax plan as a treasure map.</p>
+        <p class="lead"> 🗺️ Instead of “X marks the spot,” you’ve got “Deductions,” “Credits,” and “Investments” as
+          your landmarks.</p>
+        <p class="lead"> By following these markers, you can dig up financial treasures and avoid common pitfalls.
+        </p>
+        <p class="lead font-weight-bold">Click on each landmark on the map to reveal information about taxes.</p>
+      </section>
+      <hr>
+
+      <img class="featurette-image img-fluid d-block ml-auto mr-auto" src="images/taxMap.png" alt="map"
+        usemap="#taxMap">
+
+      <map name="taxMap">
+        <area shape="rect" coords="55,21,327,147" href="#treasure" alt="treasure" onclick="revealTreasure()">
+        <area shape="rect" coords="157,176,371,371" href="#investment" alt="investment" onclick="revealInvestment()">
+        <area shape="rect" coords="437,119,612,294" href="#liability" alt="liability" onclick="revealLiability()">
+        <area shape="rect" coords="649,221,845,359" href="#deductions" alt="deductions" onclick="revealDeductions()">
+        <area shape="rect" coords="372,417,571,550" href="#traps" alt="traps" onclick="revealTraps()">
+        <area shape="rect" coords="321,568,504,693" href="#policy" alt="policy" onclick="revealPolicy()">
+        <area shape="rect" coords="590,531,932,745" href="#credit" alt="credit" onclick="revealCredit()">
+        <area shape="rect" coords="54,525,250,665" href="#start" alt="start" onclick="revealStart()">
+      </map>
+
+      <hr>
+
+      <section class="featurette landmark" id="deductions">
+
+        <h2 class="featurette-heading text-center font-weight-bold">Cave of Deductions:</h2>
+
+        <hr>
+
+        <p class="lead">Tax Deductions: The Fascinating Caves of Tax Savings 🍙</p>
+
+        <hr>
+
+        <p class="lead"><span class="font-weight-normal">Landmark: </span>Deductions are like hidden caves filled with
+          valuable gems.</p>
+        <p class="lead">Exploring these caves
+          allows you to uncover ways to lower your taxable income and save money.</p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Cave of Contributions:</h3>
+        <p class="lead">This cave is filled with treasures like contributions to retirement accounts such as the Public
+          Provident Fund (PPF), Employee Provident Fund (EPF), and National Pension Scheme (NPS).
+        <p class="lead">These contributions
+          reduce your taxable income under Section 80C, lightening your financial load and helping you save for the
+          future!</p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Cave of Home Ownership:</h3>
+        <p class="lead">Inside this cave, you’ll discover riches in the form of deductions on home loan interest
+          payments under Section 24(b) and principal repayments under Section 80C.
+        <p class="lead">It's like uncovering a stash of gold
+          coins with every EMI payment you make, making home ownership more rewarding!</p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Cave of Education:</h3>
+        <p class="lead">This cave holds treasures for education-related expenses.</p>
+        <p class="lead">Under Section 80E, deductions on
+          interest paid on education loans help you pay off your educational debts faster while reducing your tax
+          burden, allowing you to focus on building your future.</p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Cave of Charitable Giving:</h3>
+        <p class="lead">For those who give generously, this cave is brimming with precious stones.</p>
+        <p class="lead">Donations to qualified charities under Section 80G can lower your taxable income, making your
+          philanthropic efforts even more rewarding while supporting causes you care about.</p>
+
+        <hr>
+
+        <p class="lead">Exploring these hidden caves of deductions can lead to significant tax savings and bring you
+          closer to your financial goals!</p>
+
+        <a href="#map" class="btn btn-secondary my-2">Go Back to Map</a>
+
+      </section>
+
+      <section class="featurette landmark" id="credit">
+
+        <h2 class="featurette-heading text-center font-weight-bold">Credit Island:</h2>
+
+        <hr>
+
+        <p class="lead">Credits: The Tax-Saving Islands of Relief 🏝️</p>
+
+        <hr>
+
+        <p class="lead"><span class="font-weight-normal">Landmark: </span>Tax credits in India are like peaceful islands
+          that provide direct relief from the
+          taxes you owe.</p>
+        <p class="lead">Unlike deductions, these credits reduce your tax liability rupee for rupee, making them a
+          much-needed escape from tax pressures.</p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Child Care Island:</h3>
+        <p class="lead">In India, while there isn’t a direct tax credit for child care, the government does offer relief
+          through exemptions for certain allowances related to children’s education and hostel expenses, easing the
+          burden on families.</p>
+        <p class="lead"> It’s like finding a peaceful retreat from tax obligations while securing your child’s future.
+        </p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Education Island:</h3>
+        <p class="lead">This island provides refuge for those pursuing education.</p>
+        <p class="lead">Under Section 80E of the Income Tax Act, you can claim deductions on the interest paid for loans
+          taken for higher education.</p>
+        <p class="lead">It's a financial haven for students and their families, helping reduce the strain of educational
+          expenses.</p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Energy Efficiency Island:</h3>
+        <p class="lead">If you invest in making your home energy-efficient by installing solar panels or other renewable
+          energy systems, while direct tax credits are limited, you can avail of certain state government subsidies and
+          incentives.</p>
+        <p class="lead">This eco-friendly island is like a bonus for those who go green and invest in sustainable
+          living.</p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Insurance & Investment Island:</h3>
+        <p class="lead">This island offers a break through tax savings under Sections 80C and 80D.</p>
+        <p class="lead">Contributions towards life insurance, provident funds, and health insurance premiums offer
+          relief by reducing taxable income, allowing you to invest in your future while also reducing your tax burden.
+        </p>
+
+        <hr>
+
+        <p class="lead">These tax-saving islands in India help you navigate through financial planning while offering a
+          well-deserved escape from the demands of taxes. </p>
+
+        <a href="#map" class="btn btn-secondary my-2">Go Back to Map</a>
+
+      </section>
+
+      <section class="featurette landmark" id="investment">
+
+        <h2 class="featurette-heading text-center font-weight-bold">Investment Castle:</h2>
+
+        <hr>
+
+        <p class="lead">Investments: The Castle of Wealth 🏰</p>
+
+        <hr>
+
+        <p class="lead"><span class="font-weight-normal">Landmark: </span>Investments are like a grand castle, full of
+          wealth-building potential.</p>
+        <p class="lead">This castle
+          not only holds valuable treasures but also expands over time, offering significant long-term benefits.</p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Tower of Retirement Funds:</h3>
+        <p class="lead">This tower houses contributions to retirement accounts like the Public Provident Fund (PPF),
+          National Pension System (NPS), and Employee Provident Fund (EPF).</p>
+        <p class="lead">These investments secure your financial future while providing tax advantages under Sections 80C
+          and 80CCD, reducing your taxable income and allowing your wealth to grow tax-deferred.
+        </p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Vault of Tax-Free Growth:</h3>
+        <p class="lead">Inside this vault, investments such as the Public Provident Fund (PPF) offer the treasure of
+          tax-free growth.</p>
+        <p class="lead">The money you invest grows without being taxed, and withdrawals are also tax-free, making this
+          vault a safe haven for building wealth.</p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Chamber of Tax-Free Bonds:</h3>
+        <p class="lead">Investing in tax-free bonds is like uncovering a treasure chamber where the interest earned is
+          exempt from tax.</p>
+        <p class="lead">These bonds, issued by government entities, add value to your portfolio without increasing your
+          tax burden.</p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Hall of Tax-Efficient Funds:</h3>
+        <p class="lead">This hall features tax-efficient funds such as Equity-Linked Savings Schemes (ELSS) and index
+          funds, which offer both tax benefits under Section 80C and potential for high returns.</p>
+        <p class="lead">These investments help you keep more of your earnings, making your financial journey smoother.
+        </p>
+
+        <hr>
+
+        <p class="lead">Exploring this Castle of Wealth can lead to a prosperous future, where each investment adds to
+          your financial security and growth!</p>
+
+        <a href="#map" class="btn btn-secondary my-2">Go Back to Map</a>
+
+      </section>
+
+      <section class="featurette landmark" id="traps">
+
+        <h2 class="featurette-heading text-center font-weight-bold">Quicksand of Tax Traps:</h2>
+
+        <hr>
+
+        <p class="lead">Tax Traps: The Quicksand of Financial Missteps ⚠</p>
+
+        <hr>
+
+        <p class="lead"><span class="font-weight-normal">Landmark: </span>Tax traps are like patches of quicksand hidden
+          in your financial journey.</p>
+        <p class="lead">At first glance, they seem harmless, but if you step into them, they can pull you down, leading
+          to unexpected tax burdens and reducing your hard-earned wealth.</p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Quicksand of Early Withdrawals:</h3>
+        <p class="lead">Refers to early withdrawals from retirement funds like Public Provident Fund (PPF) and National
+          Pension System (NPS), which are common investment schemes in India.</p>
+        <p class="lead">Early withdrawals can lead to penalties and tax implications, making this relevant to
+          taxpayers.
+        </p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Quicksand of Misreported Income:</h3>
+        <p class="lead">This addresses the risks of not reporting all income, including from investments, freelance
+          work, or property rentals.</p>
+        <p class="lead">The Income Tax Department in India has stringent rules on reporting income, and misreporting can
+          lead to audits and penalties, making this advice essential for taxpayers.</p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Quicksand of Ignoring Tax Benefits:</h3>
+        <p class="lead">Discusses missing out on deductions and credits, such as under Sections 80C (retirement funds),
+          80D (health insurance), and 80E (education loans), which are important in the tax system.</p>
+        <p class="lead">Failing to claim these benefits can result in higher tax liability.</p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Quicksand of Short-Term Gains:</h3>
+        <p class="lead">Relates to capital gains taxes in India, where short-term gains (less than one year) from equity
+          investments are taxed at 15%, while long-term gains (over one year) on amounts exceeding ₹1 lakh are taxed at
+          10%.</p>
+        <p class="lead">Focusing on short-term gains without considering tax implications is a common financial pitfall
+          for investors.
+        </p>
+
+        <hr>
+
+        <p class="lead">This information fits well with the tax landscape and offers practical advice to avoid
+          tax traps in India.</p>
+
+        <a href="#map" class="btn btn-secondary my-2">Go Back to Map</a>
+
+      </section>
+
+      <section class="featurette landmark" id="liability">
+
+        <h2 class="featurette-heading text-center font-weight-bold">Volcanic Liabilities:</h2>
+
+        <hr>
+
+        <p class="lead">Tax Liabilities: The Volcano of Financial Obligations 🌋</p>
+
+        <hr>
+
+        <p class="lead"><span class="font-weight-normal">Landmark: </span>Tax liabilities are like a
+          dormant volcano- seemingly manageable at first, but if not
+          properly handled, they can erupt, overwhelming you with financial obligations.</p>
+        <p class="lead">Just as a volcano requires careful attention, managing your tax liabilities effectively is
+          crucial to avoiding unexpected financial disasters.</p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Lava of Income Tax:</h3>
+        <p class="lead">The most common tax liability in India is income tax.</p>
+        <p class="lead">If not planned for properly, your annual tax bill can feel like molten lava, slowly creeping
+          up
+          and consuming your savings.
+        </p>
+        <p class="lead">Salaried individuals, business owners, and freelancers alike need to be aware of the income
+          tax
+          slabs and deductions available under Sections 80C to 80U to avoid getting caught off guard by a massive
+          tax
+          burden.</p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Eruption of GST:</h3>
+        <p class="lead">For businesses and entrepreneurs, Goods and Services Tax (GST) is like a volcano waiting to
+          erupt.</p>
+        <p class="lead">If GST returns aren’t filed correctly or on time, penalties and interest charges can pile up
+          quickly, turning a small issue into a financial disaster.</p>
+        <p class="lead">Staying compliant with GST regulations is essential to prevent this tax volcano from
+          erupting
+          and damaging your business.</p>
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Smoke of Capital Gains Tax:</h3>
+        <p class="lead">When you sell property, stocks, or other investments, capital gains tax is the smoke
+          signaling
+          the volcano’s activity.</p>
+        <p class="lead">If you don’t account for this tax liability, especially with long-term and short-term gains
+          taxed differently in India, the volcanic pressure can build up, leading to a hefty tax payment that can
+          shake
+          your financial foundation.</p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Ashes of Property Tax:</h3>
+        <p class="lead">Owning property comes with the responsibility of paying property taxes, which can feel like
+          volcanic ash slowly settling over time.</p>
+        <p class="lead">If ignored, these taxes can accumulate and lead to penalties, turning what seemed like a
+          minor
+          obligation into a much larger financial burden.
+        </p>
+
+        <hr>
+
+        <p class="lead">Managing these tax liabilities is like keeping the volcano under control.</p>
+        <p class="lead">By staying informed, planning ahead, and ensuring timely payments, you can prevent financial
+          eruptions and keep your financial landscape calm and stable.</p>
+
+        <a href="#map" class="btn btn-secondary my-2">Go Back to Map</a>
+
+      </section>
+
+      <section class="featurette landmark" id="policy">
+
+        <h2 class="featurette-heading text-center font-weight-bold">Refuge Policies:</h2>
+
+        <hr>
+
+        <p class="lead">Tax Policies: The Refuge Village of Financial Relief 🏘</p>
+
+        <hr>
+
+        <p class="lead"><span class="font-weight-normal">Landmark: </span>Tax policies offered by the Indian government
+          are like a refuge village- providing
+          shelter and safety from the erupting volcano of tax liabilities.</p>
+        <p class="lead">These policies help individuals and businesses find relief through tax planning, deductions, and
+          exemptions, allowing you to navigate your financial journey more confidently.</p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Shelter of Section 80C:</h3>
+        <p class="lead">This part of the village offers protection through Section 80C of the Income Tax Act, which
+          allows deductions up to ₹1.5 lakh on investments in schemes like Public Provident Fund (PPF), Employee
+          Provident Fund (EPF), National Savings Certificate (NSC), and life insurance premiums.</p>
+        <p class="lead">It’s like finding a safe place that shields you from the burden of income tax while helping you
+          save and invest for the future.
+        </p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Clinic of Section 80D:</h3>
+        <p class="lead">For health-related concerns, the clinic in this refuge village offers Section 80D, which
+          provides deductions for health insurance premiums.</p>
+        <p class="lead">You can claim up to ₹25,000 for yourself and your family, and an additional ₹50,000 for senior
+          citizen parents.</p>
+        <p class="lead">This clinic ensures that your health-related expenses are taken care of while reducing your
+          taxable income, making it easier to manage both health and wealth.</p>
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Inn of Section 80E:</h3>
+        <p class="lead">For those pursuing higher education, the inn under Section 80E offers relief through deductions
+          on the interest paid on education loans.</p>
+        <p class="lead">This policy provides a comforting space for students and their families, allowing them to focus
+          on education without the looming shadow of high taxes on the interest paid for loans, making the path to
+          higher learning more accessible.
+        </p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Market of Housing Benefits:</h3>
+        <p class="lead">The village market offers protection for homeowners under Sections 24(b) and 80EEA, allowing
+          deductions on home loan interest payments.</p>
+        <p class="lead">This tax policy provides a much-needed respite for first-time homebuyers, ensuring that the
+          financial burden of purchasing property is eased, allowing you to build your dream home while benefiting from
+          tax deductions.</p>
+
+        <hr>
+
+        <h3 class="featurette-heading font-weight-normal">The Temple of Charitable Giving (Section 80G):</h3>
+        <p class="lead">For those who are philanthropic, the temple in this village represents Section 80G, which offers
+          deductions on donations to charitable organizations.</p>
+        <p class="lead">This policy not only provides tax relief but also promotes the spirit of giving back to society,
+          ensuring that your generosity is rewarded with financial protection.</p>
+
+        <hr>
+
+        <p class="lead">The refuge village of tax policies in India serves as a sanctuary, offering a range of
+          deductions and exemptions that help you manage your tax liabilities effectively.</p>
+        <p class="lead">By taking shelter in this village, you can protect yourself from the looming volcano of taxes
+          and plan your financial journey with greater peace of mind.</p>
+
+        <a href="#map" class="btn btn-secondary my-2">Go Back to Map</a>
+
+      </section>
+
+      <section class="featurette landmark" id="treasure">
+
+        <h2 class="featurette-heading text-center font-weight-bold">Treasure of Tax Savings:</h2>
+
+        <hr>
+
+        <p class="lead">Tax Savings: The Final Treasure at the End of the Map 💰</p>
+
+        <hr>
+
+        <p class="lead">Tax savings are the ultimate reward at the end of your financial journey- a treasure waiting to
+          be discovered after navigating various tax challenges.</p>
+        <p class="lead">Just like following a map to find hidden riches, effective tax planning helps you reach this
+          coveted prize.</p>
+
+        <hr>
+
+        <p class="lead">As you traverse through the quicksand of tax traps, the volcanoes of tax liabilities, and the
+          refuge villages of government policies, each step taken towards smart investments, claiming deductions, and
+          adhering to tax regulations brings you closer to your goal.</p>
+
+        <hr>
+
+        <p class="lead">The final treasure, a chest filled with accumulated wealth, reflects the savings achieved
+          through strategic financial planning.</p>
+        <p class="lead">It includes maximizing benefits from tax-saving instruments like PPF and NPS, and utilizing
+          deductions under Sections 80C, 80D, and 80E.</p>
+
+        <hr>
+
+        <p class="lead">At the heart of this treasure lies the crown jewel of financial freedom- enabling you to invest
+          in your future goals with confidence.</p>
+        <p class="lead">The journey through tax-saving strategies, while complex, leads to significant financial
+          rewards, providing peace of mind and a secure foundation for your financial future.</p>
+
+        <a href="#map" class="btn btn-secondary my-2">Go Back to Map</a>
+
+      </section>
+
+      <section class="featurette landmark" id="start">
+        <p class="lead">Tax planning isn’t a one-time adventure; it’s a year-round expedition! 🌟</p>
+        <p class="lead">Think of it like regular treasure hunts where you’re always on the lookout for new opportunities
+          to save.</p>
+        <p class="lead">This means keeping track of your expenses, investments, and any tax-saving opportunities as they
+          come up.</p>
+        <p class="lead">Click on any of the landmarks on the map to learn more.</p>
+        <a href="#map" class="btn btn-secondary my-2">Go Back to Map</a>
+      </section>
+
+      <hr>
+    </div>
   </main>
 
 
@@ -62,6 +532,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+  <script src=" https://cdn.jsdelivr.net/npm/holderjs@2.9.9/holder.min.js "></script>
+  <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"
+    integrity="sha256-ypTI1jufjm42pWNTi3b9yr+B7SNfVMJ7Xcv+NcCSLpU=" crossorigin="anonymous"></script>
+  <script>
+    imageMapResize();
+  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>

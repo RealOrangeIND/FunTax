@@ -13,3 +13,39 @@
   .overflow-hidden {
     overflow: hidden;
   }
+
+  .featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+@media (min-width: 40em) {
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+.marketing .col-lg-6 {
+  text-align: center;
+}
+
+.marketing h2 {
+  font-weight: 400;
+}
+
+.marketing .col-lg-6 p {
+  margin-right: 3rem;
+  margin-left: 3rem;
+}
+
+.landmark {
+  display: none;
+}
