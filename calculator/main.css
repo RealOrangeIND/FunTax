@@ -18,3 +18,79 @@
 .jumbotron .container {
   max-width: 40rem;
 }
+
+form {
+  width: inherit;
+  max-width: 22rem;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+}
+
+select {
+  width: 100%;
+  padding: 1rem 0 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 0.9rem;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#resultsContainer {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+#resultsContainer h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#resultsContainer p {
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+#resultsContainer span {
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
