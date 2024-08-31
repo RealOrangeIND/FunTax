@@ -50,76 +50,81 @@
         <p class="lead text-muted">Use this calculator to quickly get an estimate of your taxes.</p>
       </div>
     </section>
+    <div class="container">
+      <form name="PopTaxCalculator">
+        <table>
 
-    <form name="PopTaxCalculator">
-      <table>
+          <label for="assessmentYear">Assessment Year:</label>
+          <select name="assessmentYear" id="assessmentYear" class="form-control" required>
+            <option id="currentyear" selected>2024-25</option>
+          </select>
 
-        <label for="assessmentYear">Assessment Year:</label>
-        <select name="assessmentYear" id="assessmentYear" class="form-control" required>
-          <option id="currentyear" selected>2024-25</option>
-          <option id="nextyear">2025-26</option>
-        </select>
+          <br>
 
-        <br>
+          <label for="taxpayerCategory">Taxpayer Category:</label>
+          <select name="taxpayerCategory" id="taxpayerCategory" class="form-control" required>
+            <option id="individual" selected>Individual</option>
+          </select>
 
-        <label for="taxpayerCategory">Taxpayer Category:</label>
-        <select name="taxpayerCategory" id="taxpayerCategory" class="form-control" required>
-          <option id="individual" selected>Individual</option>
-          <option id="firm">Firm</option>
-          <option id="llp">LLP</option>
-          <option id="domesticCompany">Domestic Company</option>
-          <option id="foreignCompany">Foreign Company</option>
-          <option id="aop">AOP/BOI</option>
-          <option id="cooperativeSociety">Cooperative Society</option>
-          <option id="trust">Trust</option>
-        </select>
+          <br>
 
-        <br>
+          <label for="residentialStatus">Residential Status:</label>
+          <select name="residentialStatus" id="residentialStatus" class="form-control" required>
+            <option id="res" selected>RES (Resident)</option>
+          </select>
 
-        <label for="residentialStatus">Residential Status:</label>
-        <select name="residentialStatus" id="residentialStatus" class="form-control" required>
-          <option id="res" selected>RES (Resident)</option>
-          <option id="rnor">RNOR (Resident But Not Ordinarily Resident)</option>
-          <option id="nr">NR (Non Resident)</option>
-        </select>
+          <br>
 
-        <br>
+          <label for="age">Age:</label>
+          <select name="age" id="age" class="form-control" required>
+            <option id="regularCitizen" selected>Below 60 years</option>
+          </select>
 
-        <label for="age">Age:</label>
-        <select name="age" id="age" class="form-control" required>
-          <option id="regularCitizen" selected>Below 60 years</option>
-          <option id="seniorCitizen">Between 60 - 79 years</option>
-          <option id="superSeniorCitizen">80 and above</option>
-        </select>
+          <br>
 
-        <br>
+          <label for="income">Total Annual Income:</label>
+          <input type="number" id="income" name="income" min="0" step="10000" required />
+          <br><br>
 
-        <label for="income">Total Annual Income:</label>
-        <input type="number" id="income" name="income" min="0" step="1" required />
-        <br><br>
+          <label for="totalDeductions">Total Deductions:</label>
+          <input type="number" id="totalDeductions" name="totalDeductions" min="0" step="10000" />
+          <br><br>
 
-        <label for="totalDeductions">Total Deductions:</label>
-        <input type="number" id="totalDeductions" name="totalDeductions" min="0" step="1"/>
-        <br><br>
+          <button type="button" onclick="sub()">View your PopTax report</button>
+          <br><br>
 
-        <button type="button" onclick="sub()">View your PopTax report</button>
-        <br><br>
+          <div id="resultsContainer" style="display: none">
+            <h3>Calculated Results:</h3>
 
-        <div id="resultsContainer" style="display: none">
-          <h3>Calculated Results:</h3>
+            <p>
+              Predicted Tax Amount (New Regime): <span id="newTaxAmount"></span>
+            </p>
 
-          <p>
-            Tax Amount (New Regime): <span id="newTaxAmount"></span>
-          </p>
+            <p>
+              Predicted Tax Amount (Old Regime): <span id="oldTaxAmount"></span>
+            </p>
 
-          <p>
-            Tax Amount (Old Regime): <span id="oldTaxAmount"></span>
-          </p>
+          </div>
+        </table>
+      </form>
 
-        </div>
-      </table>
-    </form>
+      <br>
+      <hr>
 
+      <h2>Disclaimer</h2>
+      <p class="lead">The above calculator is only to enable users to have a quick and an easy access to basic tax
+        calculation and does not purport to give correct income and tax calculation in all circumstances.</p>
+      <p class="lead">It is advised that for filing of returns the exact calculation may be made as per the provisions
+        contained in the relevant Acts, Rules etc.</p>
+
+      <hr>
+
+      <p class="lead">For more detailed and accurate results and for filing taxes, visit the Income Tax Department's
+        e-Portal.</p>
+
+      <hr>
+
+    </div>
   </main>
 
   <footer class="container text-center">

@@ -1,7 +1,3 @@
-let assessmentYear;
-let taxpayerCategory;
-let residentialStatus;
-let age;
 let income;
 let totalDeductions;
 
@@ -23,11 +19,41 @@ function taxCalc() {
 }
 
 function newTax() {
-  newTaxAmount = income + 100
+  if (income <= 300000) {
+    newTaxAmount = 0;
+  } else if (income > 300000 && income <= 700000) {
+    newTaxAmount = income * 0.05;
+  } else if (income > 700000 && income <= 1000000) {
+    newTaxAmount = income * 0.1;
+  } else if (income > 1000000 && income <= 1200000) {
+    newTaxAmount = income * 0.15;
+  } else if (income > 1200000 && income <= 1500000) {
+    newTaxAmount = income * 0.2;
+  } else if (income > 1500000) {
+    newTaxAmount = income * 0.3;
+  } else {
+    newTaxAmount = -1
+  }
 }
 
 function oldTax() {
-  oldTaxAmount = income + 100
+  income = income - totalDeductions;
+  
+  if (income <= 300000) {
+    oldTaxAmount = 0;
+  } else if (income > 300000 && income <= 600000) {
+    oldTaxAmount = income * 0.05;
+  } else if (income > 600000 && income <= 900000) {
+    oldTaxAmount = income * 0.1;
+  } else if (income > 900000 && income <= 1200000) {
+    oldTaxAmount = income * 0.15;
+  } else if (income > 1200000 && income <= 1500000) {
+    oldTaxAmount = income * 0.2;
+  } else if (income > 1500000) {
+    oldTaxAmount = income * 0.3;
+  } else {
+    oldTaxAmount = -1
+  }
 }
 
 function update() {
@@ -50,10 +76,6 @@ function sub() {
 }
 
 function initialiseValues() {
-  assessmentYear = document.getElementById("assessmentYear").value;
-  taxpayerCategory = document.getElementById("taxpayerCategory").value;
-  residentialStatus = document.getElementById("residentialStatus").value;
-  age = document.getElementById("age").value;
   income = parseFloat(document.getElementById("income").value);
   totalDeductions = parseFloat(document.getElementById("totalDeductions").value);
 }
