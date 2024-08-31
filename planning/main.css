@@ -49,3 +49,7 @@
 .landmark {
   display: none;
 }
+
+.featurette-divider {
+  margin: 5rem 0;
+}
